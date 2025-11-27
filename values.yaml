@@ -1,0 +1,20 @@
+# Версия ClickHouse
+clickhouseVersion: "22.8"
+
+# Конфигурация хранилища
+storage:
+  size: "10Gi"
+  storageClass: ""
+
+# Конфигурация Service
+service:
+  type: ClusterIP
+
+# Пользователи и пароли
+users:
+  - name: "admin"
+    password: "admin123"
+    networks: ["::/0"]
+  - name: "readonly"
+    password: "readonly123"
+    networks: ["::/0"]
