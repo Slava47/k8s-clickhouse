@@ -16,15 +16,15 @@ Helm
 
 Структура файлов:
 k8s-clickhouse/
- Chart.yaml # Helm chart metadata
- values.yaml # Параметры конфигурации
-  templates/
-    namespace.yaml # Namespace
-    configmap.yaml # Основная конфигурация
-    users-configmap.yaml # Пользователи (генерируется)
-    statefulset.yaml # StatefulSet
-    service.yaml # Service
-   _helpers.tpl # Template helpers
+├── Chart.yaml
+├── values.yaml
+├── templates/
+│   ├── namespace.yaml
+│   ├── configmap.yaml
+│   ├── statefulset.yaml
+│   ├── service.yaml
+│   ├── users-configmap.yaml
+│   └── _helpers.tpl
    
 Запуск решения
 1.Создайте папку и поместите в нее все файлы с этого репозитория, сохраняя структуру.
